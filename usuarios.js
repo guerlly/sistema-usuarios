@@ -4,4 +4,8 @@ function listarUsuarios() {
     return usuarios;
 }
 
-module.exports = { listarUsuarios };
+function agregarUsuario(nombre) {
+    usuarios.push(nombre);
+}
+
+module.exports = { listarUsuarios, agregarUsuario };
