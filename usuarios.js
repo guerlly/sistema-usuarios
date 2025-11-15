@@ -5,7 +5,6 @@ function listarUsuarios() {
 }
 
 function agregarUsuario(nombre) {
-    usuarios.push(nombre);
+    if (!nombre) return;
+    usuarios.push(nombre.toUpperCase());
 }
-
-module.exports = { listarUsuarios, agregarUsuario };
